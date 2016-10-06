@@ -24,7 +24,7 @@ export socks_proxy=socks://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
 
 sudo apt-get update
 
-####or run in terminal the file setproxy.py:
+####or run in terminal the file other/setproxy.py:
 
 sudo python setproxy.py proxy.cergy.eisti.fr 3128 jinyan PASSWORD
 
@@ -106,7 +106,7 @@ i3 ALL = NOPASSWD:/sbin/poweroff, /sbin/shutdown, /sbin/reboot
 ####or:
 i3 ALL=(ALL) NOPASSWD: ALL
 ####run:
-sh myallshutdown.sh
+sh other/myallshutdown.sh
 
 Install python
 ====================================================================
