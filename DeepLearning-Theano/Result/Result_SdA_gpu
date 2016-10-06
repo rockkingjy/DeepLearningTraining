@@ -1,0 +1,121 @@
+$ THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python SdA.py 
+Using gpu device 0: GeForce GTX 660 Ti (CNMeM is disabled, cuDNN 4007)
+... loading data
+... building the model
+... getting the pretraining functions
+... pre-training the model
+Pre-training layer 0, epoch 0, cost 71.648659
+Pre-training layer 0, epoch 1, cost 63.687859
+Pre-training layer 0, epoch 2, cost 62.291779
+Pre-training layer 0, epoch 3, cost 61.579906
+Pre-training layer 0, epoch 4, cost 61.153759
+Pre-training layer 0, epoch 5, cost 60.873814
+Pre-training layer 0, epoch 6, cost 60.607761
+Pre-training layer 0, epoch 7, cost 60.413357
+Pre-training layer 0, epoch 8, cost 60.205639
+Pre-training layer 0, epoch 9, cost 60.040764
+Pre-training layer 0, epoch 10, cost 59.906528
+Pre-training layer 0, epoch 11, cost 59.726501
+Pre-training layer 0, epoch 12, cost 59.564461
+Pre-training layer 0, epoch 13, cost 59.473030
+Pre-training layer 0, epoch 14, cost 59.331242
+Pre-training layer 1, epoch 0, cost 482.216003
+Pre-training layer 1, epoch 1, cost 464.952728
+Pre-training layer 1, epoch 2, cost 461.491547
+Pre-training layer 1, epoch 3, cost 459.551514
+Pre-training layer 1, epoch 4, cost 458.166626
+Pre-training layer 1, epoch 5, cost 457.030914
+Pre-training layer 1, epoch 6, cost 456.074951
+Pre-training layer 1, epoch 7, cost 455.253967
+Pre-training layer 1, epoch 8, cost 454.496826
+Pre-training layer 1, epoch 9, cost 453.839996
+Pre-training layer 1, epoch 10, cost 453.259491
+Pre-training layer 1, epoch 11, cost 452.728088
+Pre-training layer 1, epoch 12, cost 452.250153
+Pre-training layer 1, epoch 13, cost 451.862030
+Pre-training layer 1, epoch 14, cost 451.500214
+Pre-training layer 2, epoch 0, cost 196.515259
+Pre-training layer 2, epoch 1, cost 183.888702
+Pre-training layer 2, epoch 2, cost 181.732178
+Pre-training layer 2, epoch 3, cost 180.530746
+Pre-training layer 2, epoch 4, cost 179.690613
+Pre-training layer 2, epoch 5, cost 179.109543
+Pre-training layer 2, epoch 6, cost 178.581177
+Pre-training layer 2, epoch 7, cost 178.146057
+Pre-training layer 2, epoch 8, cost 177.777054
+Pre-training layer 2, epoch 9, cost 177.480637
+Pre-training layer 2, epoch 10, cost 177.199387
+Pre-training layer 2, epoch 11, cost 176.951218
+Pre-training layer 2, epoch 12, cost 176.725998
+Pre-training layer 2, epoch 13, cost 176.494202
+Pre-training layer 2, epoch 14, cost 176.348206
+The pretraining code for file SdA.py ran for 57.97m
+... getting the finetuning functions
+... finetunning the model
+epoch 1, minibatch 50000/50000, validation error 4.220000 %
+     epoch 1, minibatch 50000/50000, test error of best model 4.860000 %
+epoch 2, minibatch 50000/50000, validation error 2.960000 %
+     epoch 2, minibatch 50000/50000, test error of best model 3.060000 %
+epoch 3, minibatch 50000/50000, validation error 3.070000 %
+epoch 4, minibatch 50000/50000, validation error 2.710000 %
+     epoch 4, minibatch 50000/50000, test error of best model 2.700000 %
+epoch 5, minibatch 50000/50000, validation error 2.040000 %
+     epoch 5, minibatch 50000/50000, test error of best model 2.110000 %
+epoch 6, minibatch 50000/50000, validation error 2.270000 %
+epoch 7, minibatch 50000/50000, validation error 2.740000 %
+epoch 8, minibatch 50000/50000, validation error 1.930000 %
+     epoch 8, minibatch 50000/50000, test error of best model 1.850000 %
+epoch 9, minibatch 50000/50000, validation error 2.100000 %
+epoch 10, minibatch 50000/50000, validation error 1.830000 %
+     epoch 10, minibatch 50000/50000, test error of best model 1.740000 %
+epoch 11, minibatch 50000/50000, validation error 1.880000 %
+epoch 12, minibatch 50000/50000, validation error 1.690000 %
+     epoch 12, minibatch 50000/50000, test error of best model 1.710000 %
+epoch 13, minibatch 50000/50000, validation error 1.720000 %
+epoch 14, minibatch 50000/50000, validation error 1.670000 %
+     epoch 14, minibatch 50000/50000, test error of best model 1.490000 %
+epoch 15, minibatch 50000/50000, validation error 1.900000 %
+epoch 16, minibatch 50000/50000, validation error 1.620000 %
+     epoch 16, minibatch 50000/50000, test error of best model 1.720000 %
+epoch 17, minibatch 50000/50000, validation error 1.790000 %
+epoch 18, minibatch 50000/50000, validation error 1.640000 %
+epoch 19, minibatch 50000/50000, validation error 1.620000 %
+epoch 20, minibatch 50000/50000, validation error 1.500000 %
+     epoch 20, minibatch 50000/50000, test error of best model 1.490000 %
+epoch 21, minibatch 50000/50000, validation error 1.540000 %
+epoch 22, minibatch 50000/50000, validation error 1.520000 %
+epoch 23, minibatch 50000/50000, validation error 1.490000 %
+     epoch 23, minibatch 50000/50000, test error of best model 1.410000 %
+epoch 24, minibatch 50000/50000, validation error 1.480000 %
+     epoch 24, minibatch 50000/50000, test error of best model 1.420000 %
+epoch 25, minibatch 50000/50000, validation error 1.460000 %
+     epoch 25, minibatch 50000/50000, test error of best model 1.420000 %
+epoch 26, minibatch 50000/50000, validation error 1.450000 %
+     epoch 26, minibatch 50000/50000, test error of best model 1.420000 %
+epoch 27, minibatch 50000/50000, validation error 1.450000 %
+epoch 28, minibatch 50000/50000, validation error 1.460000 %
+epoch 29, minibatch 50000/50000, validation error 1.470000 %
+epoch 30, minibatch 50000/50000, validation error 1.480000 %
+epoch 31, minibatch 50000/50000, validation error 1.480000 %
+epoch 32, minibatch 50000/50000, validation error 1.480000 %
+epoch 33, minibatch 50000/50000, validation error 1.480000 %
+epoch 34, minibatch 50000/50000, validation error 1.490000 %
+epoch 35, minibatch 50000/50000, validation error 1.490000 %
+epoch 36, minibatch 50000/50000, validation error 1.490000 %
+epoch 37, minibatch 50000/50000, validation error 1.490000 %
+epoch 38, minibatch 50000/50000, validation error 1.490000 %
+epoch 39, minibatch 50000/50000, validation error 1.500000 %
+epoch 40, minibatch 50000/50000, validation error 1.490000 %
+epoch 41, minibatch 50000/50000, validation error 1.490000 %
+epoch 42, minibatch 50000/50000, validation error 1.490000 %
+epoch 43, minibatch 50000/50000, validation error 1.490000 %
+epoch 44, minibatch 50000/50000, validation error 1.490000 %
+epoch 45, minibatch 50000/50000, validation error 1.490000 %
+epoch 46, minibatch 50000/50000, validation error 1.490000 %
+epoch 47, minibatch 50000/50000, validation error 1.490000 %
+epoch 48, minibatch 50000/50000, validation error 1.490000 %
+epoch 49, minibatch 50000/50000, validation error 1.490000 %
+epoch 50, minibatch 50000/50000, validation error 1.490000 %
+epoch 51, minibatch 50000/50000, validation error 1.490000 %
+Optimization complete with best validation score of 1.450000 %, on iteration 1300000, with test performance 1.420000 %
+The training code for file SdA.py ran for 90.60m
