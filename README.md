@@ -24,34 +24,34 @@ export socks_proxy=socks://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
 
 sudo apt-get update
 
-or run in terminal the file setproxy.py:
-------------------
+####or run in terminal the file setproxy.py:
+
 sudo python setproxy.py proxy.cergy.eisti.fr 3128 jinyan PASSWORD
 
 sudo apt-get update
 
 ssh settings for log on to other servers
 ====================================================================
-run on both server and client:
--------
+####run on both server and client:
+
 sudo apt-get install openssh-server
 
-run on client, setting for login without password:
----------
+####run on client, setting for login without password:
+
 ssh-keygen -t rsa
 
 ssh i3@192.168.25.91 mkdir -p .ssh
 
 cat ~/.ssh/id_rsa.pub | ssh i3@192.168.25.91 'cat >> .ssh/authorized_keys'
 
-run on client, try to login without password:
-----------
+####run on client, try to login without password:
+
 ssh 192.168.25.91
 
 NFS setting
 ====================================================================
-server:
-----------
+####server:
+
 sudo apt install nfs-kernel-server
 
 sudo vi /etc/exports
@@ -60,8 +60,8 @@ sudo vi /etc/exports
 
 /home/i3/mxnet 192.168.25.31/22(rw)
 
-------not persistent------------
------------
+#####------not persistent------------
+
 sudo mount 192.168.25.70:/home/i3/mxnet /home/i3/mxnet
 
 sudo mount 192.168.25.70:/home/i3/Documents/install /home/i3/Documents/install
@@ -70,8 +70,8 @@ sudo mount 192.168.25.70:/home/i3/Documents/install /home/i3/Documents/install
 
 sh myallmount.sh
 
--------persistent----------------
--------------
+#####-------persistent----------------
+
 sudo vi /etc/fstab
 
 192.168.25.70:/home/i3/mxnet /home/i3/mxnet nfs rw,soft,intr 0 0
@@ -80,8 +80,8 @@ sudo vi /etc/fstab
 
 sudo service nfs-kernel-server start
 
-client:
-------------
+####client:
+
 sudo apt install nfs-common
 
 mkdir /home/i3/mxnet
@@ -227,8 +227,8 @@ sudo pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install --upgr
 
 python -m tensorflow.models.image.mnist.convolutional
 
-Problem?:
-----------
+####Problem?:
+
 if after install Torch, running Tensorfolw have errors: couldn't open cuda library cudnn,run this:
 export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH
 
