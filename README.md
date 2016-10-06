@@ -98,16 +98,16 @@ sudo mount 192.168.25.70:/home/i3/Downloads/kaggle_statefarm-master /home/i3/Dow
 
 Shutdown all computer in one command:
 ====================================================================
-//for every computer:
+for every computer:
 ------------
 sudo visudo
-//add:
+add:
 -------------
 i3 ALL = NOPASSWD:/sbin/poweroff, /sbin/shutdown, /sbin/reboot
-//or:
+or:
 ------------
 i3 ALL=(ALL) NOPASSWD: ALL
-//run:
+run:
 ------------
 sh myallshutdown.sh
 
@@ -116,7 +116,7 @@ Install python / git
 sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose g++ libopenblas-dev git
 
 git proxy setting -- when clone github, change git:// to http://
-====================================================================
+---------------
 git config --global http.proxy http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
 
 blas
@@ -128,7 +128,7 @@ cuda
 clean the old driver
 ----------
 sudo apt-get --purge remove nvidia-*
-download: https://developer.nvidia.com/cuda-downloads
+[download](https://developer.nvidia.com/cuda-downloads)
 ----------
 cp cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb  ..
 
