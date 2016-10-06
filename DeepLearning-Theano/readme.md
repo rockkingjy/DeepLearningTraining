@@ -10,7 +10,9 @@ Code files
 --------------
 
 - 1.Logistic Regression: 
+
 logistic_sgd.py: stochastic gradient descent 
+
 logistic_cg.py: conjugate gradient descent
 
 - 2.Multilayer perception: mlp.py
@@ -36,15 +38,22 @@ logistic_cg.py: conjugate gradient descent
 - 12.Modeling and generating sequences of polyphonic music with the RNN-RBM: rnnrbm.py
 
 - Other
+
 test.py: test all the functions in this file
+
 utils.py: different utility functions
 
-Result system settings:
+System settings for /Result:
 --------------
 
 Memory 7.8GB
+
 CPU AMD FX(tm)-8150 Eight-Core Processor × 8 
+
 GPU GeForce GTX 660 Ti/PCIe/SSE2
+
 Ubuntu 14.04 LTS
+
 OS type: 64-bit
+
 Disk 172.2 GB
