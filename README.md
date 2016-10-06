@@ -24,14 +24,13 @@ export socks_proxy=socks://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
 
 sudo apt-get update
 
-ssh settings for log on to other servers
-
-//or run in terminal the file setproxy.py
+or run in terminal the file setproxy.py:
 ------------------
 sudo python setproxy.py proxy.cergy.eisti.fr 3128 jinyan PASSWORD
 
 sudo apt-get update
 
+ssh settings for log on to other servers
 ====================================================================
 run on both server and client:
 -------
@@ -126,10 +125,10 @@ sudo apt-get install libatlas-base-dev
 
 cuda
 ====================================================================
-//clean the old driver
+clean the old driver
 ----------
 sudo apt-get --purge remove nvidia-*
-//down load: https://developer.nvidia.com/cuda-downloads
+download: https://developer.nvidia.com/cuda-downloads
 ----------
 cp cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb  ..
 
@@ -138,7 +137,7 @@ sudo dpkg -i cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
 sudo apt-get update
 
 sudo apt-get install cuda
-//add CUDA to path cd
+add CUDA to path cd
 -----------
 //This change is not persistent and will need to be re-run each time you log in
 
@@ -148,7 +147,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH
 
 export PYTHONPATH=/home/i3/mxnet/python
 
-//For persistent version here:????????????????????
+For persistent version here:?
 -------------
 sudo vi /etc/environment
 
@@ -232,12 +231,12 @@ sudo pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install --upgr
 
 python -m tensorflow.models.image.mnist.convolutional
 
-Problem***********************************************:
+Problem?:
 ----------
 if after install Torch, running Tensorfolw have errors: couldn't open cuda library cudnn,run this:
 export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH
 
-Caffe: http://caffe.berkeleyvision.org/installation.html
+[Caffe](http://caffe.berkeleyvision.org/installation.html)
 ====================================================================
 download source from github
 --------------
@@ -251,7 +250,7 @@ cd ~/Document/caffe-master
 
 ./examples/mnist/train_lenet.sh
 
-Torch: http://torch.ch/docs/getting-started.html#_
+[Torch](http://torch.ch/docs/getting-started.html#_)
 ====================================================================
 git clone https://github.com/torch/distro.git ~/Documents/torch --recursive
 
