@@ -1,47 +1,33 @@
-Choose and install operating system
 ====================================================================
+//choose and install operating system
 make a wince usb stick setup
-
 on the start up of the computer choose "usb-hdd"
-
 use wince to delete the disc that is for old linux
-
 use wince to recover MBR table
-
 //CUDA only work for 64 bit version,so use 64 bit ubuntu 14.0, not 16.0--too new for cuda
-
 ubuntu usb stick install choose "usb-hdd"
-
-Set proxy -- proxy.cergy.eisti.fr 3128
 ====================================================================
+//set proxy
+//proxy.cergy.eisti.fr 3128
 export http_proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
-
 export https_proxy=https://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
-
 export ftp_proxy=ftp://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
-
 export socks_proxy=socks://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
-
 sudo apt-get update
-
-ssh settings for log on to other servers
 ====================================================================
+//ssh settings for log on to other servers
 //run on both server and client:
--------
 sudo apt-get install openssh-server
 
 //run on client, setting for login without password:
----------
 ssh-keygen -t rsa
 ssh i3@192.168.25.91 mkdir -p .ssh
 cat ~/.ssh/id_rsa.pub | ssh i3@192.168.25.91 'cat >> .ssh/authorized_keys'
 
 //run on client, try to login without password:
-----------
 ssh 192.168.25.91
-
-NFS setting
 ====================================================================
+//NFS setting
 //server:
 sudo apt install nfs-kernel-server
 sudo vi /etc/exports
@@ -77,25 +63,21 @@ i3 ALL = NOPASSWD:/sbin/poweroff, /sbin/shutdown, /sbin/reboot
 i3 ALL=(ALL) NOPASSWD: ALL
 //run:
 sh myallshutdown.sh
-
-Install python / git
 ====================================================================
-
+//install python / git
 sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose g++ libopenblas-dev git
 //run in terminal the file setproxy.py
 sudo python setproxy.py proxy.cergy.eisti.fr 3128 jinyan PASSWORD
 sudo apt-get update
-
-git proxy setting -- when clone github, change git:// to http://
 ====================================================================
+//git proxy setting
 git config --global http.proxy http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
-
-blas
+//when clone github, change git:// to http://
 ====================================================================
+//blas
 sudo apt-get install libatlas-base-dev
-
-cuda
 ====================================================================
+//cuda
 //clean the old driver
 sudo apt-get --purge remove nvidia-*
 //down load: https://developer.nvidia.com/cuda-downloads
@@ -131,9 +113,8 @@ cd /usr/local/cuda/samples/5_Simulations/nbody
 sudo make
 ./nbody
 //run Cuda demo see file ~/Cuda-demo
-
-Opencv
 ====================================================================
+//opencv
 sudo apt-get install build-essential
 sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
@@ -146,14 +127,12 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
 make
 sudo make install
 //run demo see file ~/Opencv-demo
-
-Install Theano with proxy
 ====================================================================
+//install Theano with proxy
 sudo pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install Theano
 //run demo see fold ~/Theano-demo
-
-Tensorflow
 ====================================================================
+//Tensorflow
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.9.0rc0-cp27-none-linux_x86_64.whl
 sudo pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install --upgrade $TF_BINARY_URL
 //run a Tensorflow demo model
@@ -161,18 +140,16 @@ python -m tensorflow.models.image.mnist.convolutional
 //Problem***********************************************:
 if after install Torch, running Tensorfolw have errors: couldn't open cuda library cudnn,run this:
 export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH
-
-Caffe: http://caffe.berkeleyvision.org/installation.html
 ====================================================================
+//Caffe: http://caffe.berkeleyvision.org/installation.html
 //download source from github
 //test Caffe on MINST: http://caffe.berkeleyvision.org/gathered/examples/mnist.html
 cd ~/Document/caffe-master
 ./data/mnist/get_mnist.sh
 ./examples/mnist/create_mnist.sh
 ./examples/mnist/train_lenet.sh
-
-Torch: http://torch.ch/docs/getting-started.html#_
 ====================================================================
+//Torch: http://torch.ch/docs/getting-started.html#_
 git clone https://github.com/torch/distro.git ~/Documents/torch --recursive
 cd ~/Documents/torch; 
 //because the proxy condition in eisti, before this command line:
@@ -186,25 +163,19 @@ bash install-deps;
 source ~/.bashrc
 //test Torch
 th
-
-ipython 
 ====================================================================
+//install ipython 
 https://jupyter.org/
-
-Lasagne
 ====================================================================
+//install Lasagne
 pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install Lasagne==0.1
-
-pandas
-====================================================================
+//install pandas
 pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install pandas
-
-scikit-learn
 ====================================================================
+apt-get install scikit-learn
 pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install -U scikit-learn
-
-mxNet
 ====================================================================
+//install mxnet:
 sudo apt-get update
 sudo apt-get install -y build-essential git libatlas-base-dev libopencv-dev
 USE_DIST_KVSTORE=1
