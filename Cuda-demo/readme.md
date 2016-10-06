@@ -1,12 +1,12 @@
-//compile
+###compile
 
 nvcc benchmark-cublas.cu -std=c++11 -lcublas -o benchmark.out
 
-//run
+###run
 
 ./benchmark.out 
 
-//result
+###result
 
 XNOR GEMM kernel time: 0.304656 s
 

@@ -1,4 +1,4 @@
-//compile
+###compile
 
 cd ~/Opencv-demo
 
@@ -6,6 +6,6 @@ cmake .
 
 make
 
-//run
+###run
 
 ./DisplayImage lena.jpg

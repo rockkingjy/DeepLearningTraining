@@ -1,4 +1,4 @@
-//run
+###run
 
 cd ~/Theano-demo
 
@@ -6,11 +6,11 @@ THEANO_FLAGS=mode=FAST_RUN,device=cpu,floatX=float32 python Theano-demo.py
 
 THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python Theano-demo.py
 
-//if ImportError: No module named theano
+###if ImportError: No module named theano
 
 export PYTHONPATH=/usr/local/lib/python2.7/dist-packages/:$PYTHONPATH
 
-//output:
+###output:
 
 $ THEANO_FLAGS=mode=FAST_RUN,device=cpu,floatX=float32 python Theano-demo.py
 
