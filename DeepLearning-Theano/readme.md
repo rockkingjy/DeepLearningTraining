@@ -11,9 +11,9 @@ Code files
 
 - 1.Logistic Regression: 
 
-		logistic_sgd.py: stochastic gradient descent 
+	logistic_sgd.py: stochastic gradient descent 
 
-		logistic_cg.py: conjugate gradient descent
+	logistic_cg.py: conjugate gradient descent
 
 - 2.Multilayer perception: mlp.py
 
@@ -37,11 +37,11 @@ Code files
 
 - 12.Modeling and generating sequences of polyphonic music with the RNN-RBM: rnnrbm.py
 
-- Other
+- Other:
 
-		test.py: test all the functions in this file
+	test.py: test all the functions in this file
 
-		utils.py: different utility functions
+	utils.py: different utility functions
 
 System settings for /Result:
 --------------
