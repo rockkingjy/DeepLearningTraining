@@ -108,13 +108,9 @@ i3 ALL=(ALL) NOPASSWD: ALL
 ####run:
 sh myallshutdown.sh
 
-Install python / git
+Install python
 ====================================================================
-sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose g++ libopenblas-dev git
-
-####git proxy setting -- when clone github, change git:// to http://
-
-git config --global http.proxy http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
+sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose g++ libopenblas-dev
 
 blas
 ====================================================================
@@ -335,3 +331,23 @@ python /home/i3/mxnet/tools/launch.py -n 3 --launcher ssh -H /home/i3/mxnet/host
 cd ~/mxnet/example/model-parallel-lstm
 
 python /home/i3/mxnet/tools/launch.py -n 2 --launcher ssh -H /home/i3/mxnet/hosts python lstm_ptb.py --kv-store dist_sync
+
+git
+==============================================
+####git proxy setting -- when clone github, change git:// to http://
+git config --global http.proxy http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
+
+git config --global user.name "rockkingjy"
+
+git config --global user.email "rockking.jy@gmail.com"
+
+git init deeplearning.selftrain
+
+git remote add origin https://github.com/rockkingjy/deeplearning.selftrain.gitgit push -u origin master
+
+git add .
+
+git commit -m "rearranged"
+
+git push -u origin master
+
