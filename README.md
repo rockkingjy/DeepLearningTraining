@@ -1,4 +1,4 @@
-- Choose and install operating system
+Choose and install operating system
 ====================================================================
 make a wince usb stick setup
 
@@ -98,25 +98,22 @@ sudo mount 192.168.25.70:/home/i3/Downloads/kaggle_statefarm-master /home/i3/Dow
 
 Shutdown all computer in one command:
 ====================================================================
-for every computer:
-------------
+####for every computer:
+
 sudo visudo
-add:
--------------
+####add:
 i3 ALL = NOPASSWD:/sbin/poweroff, /sbin/shutdown, /sbin/reboot
-or:
-------------
+####or:
 i3 ALL=(ALL) NOPASSWD: ALL
-run:
-------------
+####run:
 sh myallshutdown.sh
 
 Install python / git
 ====================================================================
 sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose g++ libopenblas-dev git
 
-git proxy setting -- when clone github, change git:// to http://
----------------
+####git proxy setting -- when clone github, change git:// to http://
+
 git config --global http.proxy http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
 
 blas
@@ -125,11 +122,11 @@ sudo apt-get install libatlas-base-dev
 
 cuda
 ====================================================================
-clean the old driver
-----------
+####clean the old driver
+
 sudo apt-get --purge remove nvidia-*
-[download](https://developer.nvidia.com/cuda-downloads)
-----------
+####[download](https://developer.nvidia.com/cuda-downloads)
+
 cp cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb  ..
 
 sudo dpkg -i cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
@@ -137,9 +134,8 @@ sudo dpkg -i cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
 sudo apt-get update
 
 sudo apt-get install cuda
-add CUDA to path cd
------------
-//This change is not persistent and will need to be re-run each time you log in
+###add CUDA to path cd
+####This change is not persistent and will need to be re-run each time you log in
 
 export PATH=/usr/local/cuda-7.5/bin:$PATH
 
@@ -147,8 +143,8 @@ export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH
 
 export PYTHONPATH=/home/i3/mxnet/python
 
-For persistent version here:?
--------------
+####For persistent version here:?
+
 sudo vi /etc/environment
 
 //then add /usr/local/cuda-7.5/bin: to PATH in /etc/environment
@@ -163,8 +159,8 @@ sudo ldconfig
 
 sudo reboot
 
-GPU cuDNN setting
--------------
+####GPU cuDNN setting
+
 cd ~/Documents/install
 
 tar xvzf cudnn-7.0-linux-x64-v4.0-prod.tgz
@@ -177,8 +173,8 @@ sudo cp cuda/lib64/libcudnn* /usr/local/cuda-7.5/lib64/
 
 sudo chmod a+r /usr/local/cuda-7.5/include/cudnn.h /usr/local/cuda-7.5/lib64/libcudnn*
 
-test CUDA installation:
-----------------
+####test CUDA installation:
+
 nvidia-smi
 
 cd /usr/local/cuda/samples/5_Simulations/nbody
@@ -187,8 +183,8 @@ sudo make
 
 ./nbody
 
-run Cuda demo see file ~/Cuda-demo
------------------
+####run Cuda demo see file ~/Cuda-demo
+
 Opencv
 ====================================================================
 sudo apt-get install build-essential
@@ -213,14 +209,14 @@ make
 
 sudo make install
 
-run demo see file ~/Opencv-demo
-------------------
+####run demo see file ~/Opencv-demo
+
 Install Theano with proxy
 ====================================================================
 sudo pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install Theano
 
-run demo see fold ~/Theano-demo
----------------------
+####run demo see fold ~/Theano-demo
+
 Tensorflow
 ====================================================================
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.9.0rc0-cp27-none-linux_x86_64.whl
@@ -238,10 +234,10 @@ export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH
 
 [Caffe](http://caffe.berkeleyvision.org/installation.html)
 ====================================================================
-download source from github
---------------
-test Caffe on MINST: http://caffe.berkeleyvision.org/gathered/examples/mnist.html
-----------
+####download source from github
+
+####test Caffe on MINST: http://caffe.berkeleyvision.org/gathered/examples/mnist.html
+
 cd ~/Document/caffe-master
 
 ./data/mnist/get_mnist.sh
@@ -274,8 +270,8 @@ bash install-deps;
 
 source ~/.bashrc
 
-test Torch
-------------
+####test Torch
+
 th
 
 ipython 
