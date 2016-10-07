@@ -559,7 +559,7 @@ def train_lstm(
                 use_noise.set_value(1.)
 
                 # Select the random examples for this minibatch
-                y = [train[1][t] for t in train_index]
+                y = [train[1][t]for t in train_index]
                 x = [train[0][t]for t in train_index]
 
                 # Get the data in numpy.ndarray format

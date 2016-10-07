@@ -33,27 +33,55 @@ Code files
 
 - 10.Recurrent Neural Networks with Word Embeddings: rnnslu.py
 
-- 11.LSTM Networks for Sentiment Analysis: imdb_preprocess.py lstm.py imdb.py
+- 11.LSTM Networks for Sentiment Analysis: 
+
+	imdb_preprocess.py, tokenizer.perl: used for create imdb.pkl and imdb.dict.pkl from data/aclImdb_v1.tar.gz, here we already have this pickled files for lstm.py
+
+	lstm.py: Main script. Defines and train the model.
+
+	imdb.py: Secondary script. Handles the loading and preprocessing of the IMDB dataset.
+
+	run the code by calling: THEANO_FLAGS="floatX=float32" python lstm.py
 
 - 12.Modeling and generating sequences of polyphonic music with the RNN-RBM: rnnrbm.py
 
-- Other:
+- Other codes:
 
 	test.py: test all the functions in this file
 
 	utils.py: different utility functions
 
-System settings for /Result:
+	data/download.sh: download all the datasets needed for the examples above
+
+	data/aclImdb_v1.tar.gz(can be downloaded see imdb_preprocess.py): data for imdb_preprocess.py
+
+	data/atis.*: data for rnnslu.py
+
+	data/imdb.*: data for lstm.py
+
+	data/midi.zip(code/midi/*), data/Nottingham: data for rnnrbm.py
+
+	data/training_colorpatches_16x16_demo.mat:
+
+In the folder /Result are the results for all the examples running both on CPU and GPU.
 --------------
 
+System settings for /Result:
+--------------
 Memory 7.8GB
 
 CPU AMD FX(tm)-8150 Eight-Core Processor × 8 
 
 GPU GeForce GTX 660 Ti/PCIe/SSE2
 
-Ubuntu 14.04 LTS
+Ubuntu 14.04 LTS 64-bit
 
-OS type: 64-bit
+System settings for /Result/Result_rnnslu_cpu,Result_lstm_cpu:
+-----------------
+Memory 7,5 GiB
 
-Disk 172.2 GB
+CPU Intel® Core™ i5-5300U CPU @ 2.30GHz × 4 
+
+GPU Intel® HD Graphics 5500 (Broadwell GT2) 
+
+Ubuntu 15.04 64-bit
