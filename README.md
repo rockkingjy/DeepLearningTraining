@@ -345,11 +345,10 @@ git init selftrain.deeplearning
 
 git remote add origin https://github.com/rockkingjy/selftrain.deeplearning.git
 
-git push -u origin master
-
 git add .
 
 git commit -m "rearranged"
 
 git push -u origin master
 
+git pull origin master
