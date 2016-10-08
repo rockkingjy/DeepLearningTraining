@@ -270,13 +270,17 @@ source ~/.bashrc
 
 th
 
-ipython 
+Keras
 ====================================================================
-https://jupyter.org/
+pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install -U keras
 
 Lasagne
 ====================================================================
 pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install Lasagne==0.1
+
+ipython 
+====================================================================
+https://jupyter.org/
 
 pandas
 ====================================================================
