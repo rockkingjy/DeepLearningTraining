@@ -1,0 +1,57 @@
+$ python logistic_cg.py 
+... loading data
+... building the model
+Optimizing using scipy.optimize.fmin_cg...
+validation error 29.989583 %
+validation error 24.437500 %
+validation error 20.760417 %
+validation error 16.937500 %
+validation error 14.270833 %
+validation error 14.156250 %
+validation error 13.177083 %
+validation error 12.270833 %
+validation error 11.697917 %
+validation error 11.531250 %
+validation error 10.531250 %
+validation error 10.385417 %
+validation error 10.135417 %
+validation error 10.260417 %
+validation error 9.885417 %
+validation error 9.791667 %
+validation error 9.197917 %
+validation error 9.020833 %
+validation error 8.937500 %
+validation error 8.781250 %
+validation error 8.666667 %
+validation error 8.552083 %
+validation error 8.343750 %
+validation error 8.291667 %
+validation error 8.364583 %
+validation error 8.354167 %
+validation error 8.114583 %
+validation error 8.104167 %
+validation error 8.000000 %
+validation error 7.927083 %
+validation error 7.822917 %
+validation error 7.968750 %
+validation error 7.937500 %
+validation error 7.958333 %
+validation error 7.979167 %
+validation error 7.895833 %
+validation error 7.822917 %
+validation error 7.937500 %
+validation error 7.875000 %
+validation error 7.708333 %
+validation error 7.520833 %
+validation error 7.541667 %
+validation error 7.437500 %
+validation error 7.562500 %
+validation error 7.468750 %
+validation error 7.406250 %
+validation error 7.489583 %
+validation error 7.447917 %
+validation error 7.500000 %
+validation error 7.447917 %
+Optimization complete with best validation score of 7.406250 %, with test performance 7.562500 %
+The code for file logistic_cg.py ran for 33.2s
+

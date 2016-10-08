@@ -1,0 +1,107 @@
+$ THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python rnnslu.py
+Using gpu device 0: GeForce GTX 660 Ti (CNMeM is disabled, cuDNN 4007)
+{'verbose': 1, 'win': 7, 'savemodel': False, 'fold': 3, 'seed': 345, 'emb_dimension': 50, 'nepochs': 60, 'data': 'atis', 'nhidden': 200, 'decay': True, 'lr': 0.0970806646812754}
+NEW BEST: epoch 0 valid F1 68.18 best test F1 66.22ec) <<
+NEW BEST: epoch 1 valid F1 80.63 best test F1 77.98ec) <<
+NEW BEST: epoch 2 valid F1 83.79 best test F1 80.66ec) <<
+NEW BEST: epoch 3 valid F1 88.42 best test F1 84.92ec) <<
+NEW BEST: epoch 4 valid F1 89.65 best test F1 85.97ec) <<
+NEW BEST: epoch 5 valid F1 91.02 best test F1 86.87ec) <<
+NEW BEST: epoch 6 valid F1 91.45 best test F1 88.81ec) <<
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 7 valid F1 92.05 best test F1 89.89
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 8 valid F1 93.78 best test F1 90.69
+NEW BEST: epoch 9 valid F1 94.19 best test F1 91.27ec) <<
+NEW BEST: epoch 10 valid F1 94.7 best test F1 91.64sec) <<
+NEW BEST: epoch 11 valid F1 94.88 best test F1 92.23ec) <<
+NEW BEST: epoch 12 valid F1 95.4 best test F1 92.73sec) <<
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 13 valid F1 95.45 best test F1 92.79
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 15 valid F1 95.55 best test F1 93.15
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 16 valid F1 95.75 best test F1 93.31
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 17 valid F1 96.16 best test F1 93.35
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 18 valid F1 96.36 best test F1 93.3
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 20 valid F1 96.37 best test F1 93.39
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 21 valid F1 96.51 best test F1 93.97
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 22 valid F1 96.56 best test F1 93.67
+[learning] epoch 23 >> 100.00% completed in 24.69 (sec) <<
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 25 valid F1 96.84 best test F1 93.79
+[learning] epoch 26 >> 100.00% completed in 23.90 (sec) <<
+[learning] epoch 27 >> 100.00% completed in 23.47 (sec) <<
+[learning] epoch 28 >> 100.00% completed in 23.63 (sec) <<
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 14199.
+NEW BEST: epoch 29 valid F1 96.9 best test F1 93.96
+[learning] epoch 30 >> 100.00% completed in 23.49 (sec) <<
+NEW BEST: epoch 31 valid F1 96.99 best test F1 94.0sec) <<
+[learning] epoch 32 >> 100.00% completed in 23.70 (sec) <<
+[learning] epoch 33 >> 100.00% completed in 23.23 (sec) <<
+[learning] epoch 34 >> 100.00% completed in 23.52 (sec) <<
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+[learning] epoch 36 >> 100.00% completed in 23.19 (sec) <<
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+[learning] epoch 39 >> 100.00% completed in 23.11 (sec) <<
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+NEW BEST: epoch 40 valid F1 97.03 best test F1 94.11
+[learning] epoch 41 >> 100.00% completed in 23.30 (sec) <<
+NEW BEST: epoch 42 valid F1 97.13 best test F1 94.4sec) <<
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+[learning] epoch 45 >> 100.00% completed in 23.78 (sec) <<
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+NEW BEST: epoch 47 valid F1 97.17 best test F1 94.07
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+NEW BEST: epoch 54 valid F1 97.19 best test F1 94.39
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+NEW BEST: epoch 57 valid F1 97.23 best test F1 94.2
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+Use of uninitialized value in printf at rnnslu/conlleval.pl line 229, <STDIN> line 11877.
+
+BEST RESULT: epoch 57 valid F1 97.23 best test F1 94.2 with the model rnnslu
+
