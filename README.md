@@ -213,7 +213,7 @@ sudo pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install Theano
 
 ####run demo see fold ~/Theano-demo
 
-Tensorflow
+[Tensorflow](https://www.tensorflow.org/versions/r0.11/get_started/index.html)
 ====================================================================
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.9.0rc0-cp27-none-linux_x86_64.whl
 
@@ -270,13 +270,17 @@ source ~/.bashrc
 
 th
 
-ipython 
+Keras
 ====================================================================
-https://jupyter.org/
+pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install -U keras
 
 Lasagne
 ====================================================================
 pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install Lasagne==0.1
+
+ipython 
+====================================================================
+https://jupyter.org/
 
 pandas
 ====================================================================
