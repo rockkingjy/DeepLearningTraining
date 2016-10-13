@@ -1,0 +1,410 @@
+$ THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python rnnrbm.py 
+pylab isn't available. If you use its functionality, it will crash.
+It can be installed with 'pip install -q Pillow'
+Using gpu device 0: GeForce GTX 660 Ti (CNMeM is disabled, cuDNN 4007)
+Epoch 1/200
+-15.0065596747
+Epoch 2/200
+-10.4881366701
+Epoch 3/200
+-10.2446329419
+Epoch 4/200
+-10.1443409438
+Epoch 5/200
+-9.75404074576
+Epoch 6/200
+-8.62314100857
+Epoch 7/200
+-8.35152540322
+Epoch 8/200
+-8.26484863728
+Epoch 9/200
+-8.22016278271
+Epoch 10/200
+-8.16821308964
+Epoch 11/200
+-8.04470565591
+Epoch 12/200
+-7.73084501866
+Epoch 13/200
+-7.56397855045
+Epoch 14/200
+-7.49300736875
+Epoch 15/200
+-7.43790775974
+Epoch 16/200
+-7.3782964385
+Epoch 17/200
+-7.31723165774
+Epoch 18/200
+-7.24716563068
+Epoch 19/200
+-7.17699768815
+Epoch 20/200
+-7.12777075508
+Epoch 21/200
+-7.06682907425
+Epoch 22/200
+-7.05196842489
+Epoch 23/200
+-7.0228441097
+Epoch 24/200
+-7.00873174453
+Epoch 25/200
+-6.97245558797
+Epoch 26/200
+-6.86710600362
+Epoch 27/200
+-6.80124675442
+Epoch 28/200
+-6.80302377263
+Epoch 29/200
+-6.84685243997
+Epoch 30/200
+-6.89128928647
+Epoch 31/200
+-6.93066405577
+Epoch 32/200
+-6.95507307824
+Epoch 33/200
+-7.00564203988
+Epoch 34/200
+-6.97994465185
+Epoch 35/200
+-7.02595672641
+Epoch 36/200
+-7.00513712663
+Epoch 37/200
+-7.00216456861
+Epoch 38/200
+-7.00852729212
+Epoch 39/200
+-7.00458992974
+Epoch 40/200
+-6.98315363854
+Epoch 41/200
+-6.95014205862
+Epoch 42/200
+-6.92055516238
+Epoch 43/200
+-6.90401436276
+Epoch 44/200
+-6.85242374335
+Epoch 45/200
+-6.85275103276
+Epoch 46/200
+-6.84097149457
+Epoch 47/200
+-6.79492534828
+Epoch 48/200
+-6.79305102598
+Epoch 49/200
+-6.72333318718
+Epoch 50/200
+-6.75434361585
+Epoch 51/200
+-6.68356670714
+Epoch 52/200
+-6.66741725017
+Epoch 53/200
+-6.54982210259
+Epoch 54/200
+-6.49268218127
+Epoch 55/200
+-6.47624432411
+Epoch 56/200
+-6.35800358079
+Epoch 57/200
+-6.32132101982
+Epoch 58/200
+-6.27961216505
+Epoch 59/200
+-6.24512610669
+Epoch 60/200
+-6.17901731123
+Epoch 61/200
+-6.19093689647
+Epoch 62/200
+-6.23478625222
+Epoch 63/200
+-6.13983188139
+Epoch 64/200
+-6.11276030821
+Epoch 65/200
+-6.10270404797
+Epoch 66/200
+-6.10820986331
+Epoch 67/200
+-6.06080164832
+Epoch 68/200
+-6.09589079172
+Epoch 69/200
+-6.05042009579
+Epoch 70/200
+-6.04948805064
+Epoch 71/200
+-6.01709751311
+Epoch 72/200
+-6.02762142734
+Epoch 73/200
+-5.98283246372
+Epoch 74/200
+-6.01814926618
+Epoch 75/200
+-5.97527630552
+Epoch 76/200
+-5.96082205391
+Epoch 77/200
+-5.94772559785
+Epoch 78/200
+-5.95334609632
+Epoch 79/200
+-5.8863254427
+Epoch 80/200
+-5.90281644139
+Epoch 81/200
+-5.89446782511
+Epoch 82/200
+-5.86553845975
+Epoch 83/200
+-5.84563052318
+Epoch 84/200
+-5.82524367606
+Epoch 85/200
+-5.79207571237
+Epoch 86/200
+-5.77190150355
+Epoch 87/200
+-5.72791098831
+Epoch 88/200
+-5.74937896798
+Epoch 89/200
+-5.66011054723
+Epoch 90/200
+-5.67481136727
+Epoch 91/200
+-5.63938535912
+Epoch 92/200
+-5.63973650673
+Epoch 93/200
+-inf
+Epoch 94/200
+-inf
+Epoch 95/200
+-5.58193467826
+Epoch 96/200
+-5.6113407845
+Epoch 97/200
+-5.54738800589
+Epoch 98/200
+-5.50101445325
+Epoch 99/200
+-5.4971541773
+Epoch 100/200
+-5.50687666505
+Epoch 101/200
+-5.49994091845
+Epoch 102/200
+-5.49551346752
+Epoch 103/200
+-inf
+Epoch 104/200
+-5.49616236617
+Epoch 105/200
+-5.41992536
+Epoch 106/200
+-inf
+Epoch 107/200
+-inf
+Epoch 108/200
+-inf
+Epoch 109/200
+-inf
+Epoch 110/200
+-inf
+Epoch 111/200
+-inf
+Epoch 112/200
+-5.35035584144
+Epoch 113/200
+-5.34802812905
+Epoch 114/200
+-inf
+Epoch 115/200
+-5.29113865238
+Epoch 116/200
+-inf
+Epoch 117/200
+-inf
+Epoch 118/200
+-5.2818475644
+Epoch 119/200
+-inf
+Epoch 120/200
+-inf
+Epoch 121/200
+-inf
+Epoch 122/200
+-inf
+Epoch 123/200
+-5.21741898863
+Epoch 124/200
+-inf
+Epoch 125/200
+-inf
+Epoch 126/200
+-inf
+Epoch 127/200
+-inf
+Epoch 128/200
+-inf
+Epoch 129/200
+-inf
+Epoch 130/200
+-inf
+Epoch 131/200
+-inf
+Epoch 132/200
+-5.2303405974
+Epoch 133/200
+-inf
+Epoch 134/200
+-inf
+Epoch 135/200
+-inf
+Epoch 136/200
+-inf
+Epoch 137/200
+-inf
+Epoch 138/200
+-inf
+Epoch 139/200
+-inf
+Epoch 140/200
+-inf
+Epoch 141/200
+-inf
+Epoch 142/200
+-inf
+Epoch 143/200
+-inf
+Epoch 144/200
+-inf
+Epoch 145/200
+-inf
+Epoch 146/200
+-inf
+Epoch 147/200
+-inf
+Epoch 148/200
+-inf
+Epoch 149/200
+-inf
+Epoch 150/200
+-inf
+Epoch 151/200
+-inf
+Epoch 152/200
+-inf
+Epoch 153/200
+-inf
+Epoch 154/200
+-inf
+Epoch 155/200
+-inf
+Epoch 156/200
+-inf
+Epoch 157/200
+-inf
+Epoch 158/200
+-inf
+Epoch 159/200
+-inf
+Epoch 160/200
+-inf
+Epoch 161/200
+-inf
+Epoch 162/200
+-inf
+Epoch 163/200
+-inf
+Epoch 164/200
+-inf
+Epoch 165/200
+-inf
+Epoch 166/200
+-inf
+Epoch 167/200
+-inf
+Epoch 168/200
+-inf
+Epoch 169/200
+-inf
+Epoch 170/200
+-inf
+Epoch 171/200
+-inf
+Epoch 172/200
+-inf
+Epoch 173/200
+-inf
+Epoch 174/200
+-inf
+Epoch 175/200
+-inf
+Epoch 176/200
+-inf
+Epoch 177/200
+-inf
+Epoch 178/200
+-inf
+Epoch 179/200
+-inf
+Epoch 180/200
+-inf
+Epoch 181/200
+-inf
+Epoch 182/200
+-inf
+Epoch 183/200
+-inf
+Epoch 184/200
+-inf
+Epoch 185/200
+-inf
+Epoch 186/200
+-inf
+Epoch 187/200
+-inf
+Epoch 188/200
+-inf
+Epoch 189/200
+-inf
+Epoch 190/200
+-inf
+Epoch 191/200
+-inf
+Epoch 192/200
+-inf
+Epoch 193/200
+-inf
+Epoch 194/200
+-inf
+Epoch 195/200
+-inf
+Epoch 196/200
+-inf
+Epoch 197/200
+-inf
+Epoch 198/200
+-inf
+Epoch 199/200
+-inf
+Epoch 200/200
+-inf
+Traceback (most recent call last):
+  File "rnnrbm.py", line 299, in <module>
+    model.generate('sample1.mid')
+  File "rnnrbm.py", line 280, in generate
+    pylab.figure()
+NameError: global name 'pylab' is not defined
