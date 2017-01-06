@@ -12,5 +12,5 @@ Version 4: driver04.py - Added random rotation of images, new CNN structure and 
 
 Version 5: driver05.py - use vgg16 pre-trained model
 
-
+/mxnet: this is for the version of distributed system, because we do not have quite good GPU, so we have this distributed version and test it on 3 machines
  
