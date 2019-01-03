@@ -14,19 +14,19 @@ ubuntu usb stick install choose "usb-hdd"
 
 Set proxy -- proxy.cergy.eisti.fr 3128
 ====================================================================
-export http_proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
+export http_proxy=http://NAME:PASSWORD@proxy.cergy.eisti.fr:3128
 
-export https_proxy=https://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
+export https_proxy=https://NAME:PASSWORD@proxy.cergy.eisti.fr:3128
 
-export ftp_proxy=ftp://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
+export ftp_proxy=ftp://NAME:PASSWORD@proxy.cergy.eisti.fr:3128
 
-export socks_proxy=socks://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
+export socks_proxy=socks://NAME:PASSWORD@proxy.cergy.eisti.fr:3128
 
 sudo apt-get update
 
 ####or run in terminal the file other/setproxy.py:
 
-sudo python setproxy.py proxy.cergy.eisti.fr 3128 jinyan PASSWORD
+sudo python setproxy.py proxy.cergy.eisti.fr 3128 NAME PASSWORD
 
 sudo apt-get update
 
@@ -209,7 +209,7 @@ sudo make install
 
 Install Theano with proxy
 ====================================================================
-sudo pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install Theano
+sudo pip --proxy=http://NAME:PASSWORD@proxy.cergy.eisti.fr:3128 install Theano
 
 ####run demo see fold ~/Theano-demo
 
@@ -217,7 +217,7 @@ sudo pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install Theano
 ====================================================================
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.9.0rc0-cp27-none-linux_x86_64.whl
 
-sudo pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install --upgrade $TF_BINARY_URL
+sudo pip --proxy=http://NAME:PASSWORD@proxy.cergy.eisti.fr:3128 install --upgrade $TF_BINARY_URL
 
 //run a Tensorflow demo model
 
@@ -272,11 +272,11 @@ th
 
 Keras
 ====================================================================
-pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install -U keras
+pip --proxy=http://NAME:PASSWORD@proxy.cergy.eisti.fr:3128 install -U keras
 
 Lasagne
 ====================================================================
-pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install Lasagne==0.1
+pip --proxy=http://NAME:PASSWORD@proxy.cergy.eisti.fr:3128 install Lasagne==0.1
 
 ipython 
 ====================================================================
@@ -284,11 +284,11 @@ https://jupyter.org/
 
 pandas
 ====================================================================
-pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install pandas
+pip --proxy=http://NAME:PASSWORD@proxy.cergy.eisti.fr:3128 install pandas
 
 scikit-learn
 ====================================================================
-pip --proxy=http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128 install -U scikit-learn
+pip --proxy=http://NAME:PASSWORD@proxy.cergy.eisti.fr:3128 install -U scikit-learn
 
 mxNet
 ====================================================================
@@ -339,11 +339,11 @@ python /home/i3/mxnet/tools/launch.py -n 2 --launcher ssh -H /home/i3/mxnet/host
 git
 ==============================================
 ####git proxy setting -- when clone github, change git:// to http://
-git config --global http.proxy http://jinyan:PASSWORD@proxy.cergy.eisti.fr:3128
+git config --global http.proxy http://NAME:PASSWORD@proxy.cergy.eisti.fr:3128
 
-git config --global user.name "rockkingjy"
+git config --global user.name "NAME"
 
-git config --global user.email "rockking.jy@gmail.com"
+git config --global user.email "ADDRESS"
 
 git init selftrain.deeplearning
 
